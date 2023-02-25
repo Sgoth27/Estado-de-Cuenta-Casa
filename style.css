@@ -18,7 +18,7 @@ h2{
 
 .main-container{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 5px;
     /* margin-right: 25px; */
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,6 @@ h2{
     justify-content: center;
     
 }
-
 .usersTable-container{
     width: 50%;
     display: flex;
@@ -90,7 +89,7 @@ h2{
     align-items: center;
     gap: 110px;
     background-color: #009870;
-    padding: 3px;
+    padding: 4px;
     text-align: center;
     
 }
@@ -120,16 +119,21 @@ h2{
     .content-table td{
         padding: 6px 2px;
     }
+
+    .totalValor-container{
+        
+        gap: 60px;
+       
+        
+    }
 };
 
 
 /* @media (min-width: 431px) {
-
     .main-container{
         flex-direction:column !important;
         
     }
-
     .content-table{
         
         margin: 10px 0; 
@@ -147,11 +151,4 @@ h2{
         gap:5px;
     }
 }; */
-
-
-
-
-
-
-
 
