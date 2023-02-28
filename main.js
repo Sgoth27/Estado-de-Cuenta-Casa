@@ -62,6 +62,10 @@ function meterDatos(fecha,gasto,valor,persona){
     sumaGastos(gastosArray);
     //cambiarFormato(gastosArray);
 
+    for(elemento of gastos){
+        ordenarLista(elemento.registro);
+    }
+
     
     return gastos;
 }
@@ -110,6 +114,11 @@ function sumaGastos(lista){
        
 }
 
+function ordenarLista(lista){
+    const ordenar = lista.sort((a,b) => a - b);
+    return ordenar;
+}
+
 meterDatos('05-02-23','almuerzos','50000','NT');
 meterDatos('05-02-23','pedialite','7500','NT');
 meterDatos('12-02-23','almuerzos','11500','NT');
@@ -123,7 +132,7 @@ meterDatos('19-02-23','almuerzos','40000','NT');
 meterDatos('26-02-23','agua','263670','ST');
 meterDatos('25-02-23','pedialite','7500','NT');
 meterDatos('24-02-23','Exito','46500','JT');
-meterDatos('22-02-23','Fruver','35500','JT');
+meterDatos('22-02-23','Fruver','35000','JT');
 meterDatos('22-02-23','Ekocampo','12536','JT');
 meterDatos('22-02-23','fruver','19700','JT');
 meterDatos('22-02-23','Exito','47680','JT');
@@ -152,3 +161,14 @@ meterDatos('02-02-23','Hornitos','21500','JT');
 meterDatos('01-02-23','Alkosto','300585','JT');
 meterDatos('01-02-23','Fruver','35849','JT');
 meterDatos('29-01-23','Jumbo','226255','JT');
+meterDatos('26-02-23','Almuerzos','13300','NT');
+meterDatos('26-02-23','Almuerzos','13000','NT');
+meterDatos('27-02-23','Almuerzos','24000','NT');
+meterDatos('27-02-23','Almuerzos','12500','NT');
+meterDatos('28-02-23','15na Estela','594635','ST');
+meterDatos('28-02-23','15na Estela','9365','NT');
+meterDatos('28-02-23','Electrolite','7700','NT');
+meterDatos('28-02-23','Vitamina C X 30','37300','NT');
+meterDatos('24-02-23','D1','3390','JT');
+meterDatos('24-02-23','D1','3550','JT');
+meterDatos('26-02-23','Exito','84849','JT');
